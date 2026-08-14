@@ -1,0 +1,12 @@
+tool: lizard
+language: javascript
+language_version: "12-20"
+technique: "Complexity Analysis"
+classification: "Cyclomatic Complexity"
+target_files: [../../src/calculator.js]
+run:
+  command: "lizard src/"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"

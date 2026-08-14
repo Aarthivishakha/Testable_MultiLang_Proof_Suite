@@ -1,0 +1,12 @@
+tool: npm-cli
+language: javascript
+language_version: "12-26"
+technique: "Package Management"
+classification: "CLI Operations"
+target_files: [../../src/calculator.js]
+run:
+  command: "npm --version"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"

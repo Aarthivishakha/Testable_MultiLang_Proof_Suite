@@ -1,0 +1,12 @@
+tool: stryker-js
+language: javascript
+language_version: "12-26"
+technique: "Mutation Testing"
+classification: "Mutation Score"
+target_files: [../../src/calculator.js]
+run:
+  command: "npx stryker run"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"

@@ -1,0 +1,12 @@
+tool: diff-cover
+language: javascript
+language_version: "12-20"
+technique: "Coverage Analysis"
+classification: "Incremental Code Coverage"
+target_files: [../../src/calculator.js]
+run:
+  command: "diff-cover coverage.xml"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"

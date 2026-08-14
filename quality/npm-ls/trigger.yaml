@@ -1,0 +1,12 @@
+tool: npm-ls
+language: javascript
+language_version: "22-26"
+technique: "Dependency Tree Auditing"
+classification: "Dependency Graph Analysis"
+target_files: [../../src/calculator.js]
+run:
+  command: "npm ls"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"

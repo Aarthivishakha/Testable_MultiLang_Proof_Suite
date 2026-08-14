@@ -1,0 +1,12 @@
+tool: pydriller
+language: javascript
+language_version: "12-20"
+technique: "Repository Analytics"
+classification: "Git History Mining"
+target_files: [../../src/calculator.js]
+run:
+  command: "python -m pydriller src/"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"

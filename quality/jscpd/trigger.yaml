@@ -1,0 +1,12 @@
+tool: jscpd
+language: javascript
+language_version: "12-26"
+technique: "Code Quality Auditing"
+classification: "Code Duplication Detection"
+target_files: [../../src/calculator.js]
+run:
+  command: "npx jscpd --min-lines 3 --min-tokens 20 --reporters console src/"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"

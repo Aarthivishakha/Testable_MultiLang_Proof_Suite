@@ -1,0 +1,12 @@
+tool: npm-audit
+language: javascript
+language_version: "22-26"
+technique: "Dependency Vulnerability Scanning"
+classification: "Known Vulnerabilities"
+target_files: [../../src/calculator.js]
+run:
+  command: "npm audit"
+expects:
+  verified: true
+verified_in_session: true
+verified_result: "tool verified passing cleanly against src/calculator.js"
