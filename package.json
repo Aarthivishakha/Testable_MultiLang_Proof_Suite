@@ -3,19 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "node build.js",
-    "test": "mocha test/**/*.test.js"
+    "test": "mocha test/**/*.test.js",
+    "coverage": "nyc --reporter=cobertura mocha 'test/**/*.test.js'"
   },
   "devDependencies": {
+    "@stryker-mutator/core": "^8.6.0",
+    "@stryker-mutator/mocha-runner": "^8.6.0",
     "chai": "^4.5.0",
+    "esbuild": "^0.25.0",
     "eslint": "^8.57.1",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-sonarjs": "0.25.1",
     "jscpd": "^4.0.5",
     "mocha": "^10.7.3",
-    "nyc": "^17.1.0",
-    "@stryker-mutator/core": "^8.6.0",
-    "@stryker-mutator/mocha-runner": "^8.6.0"
+    "nyc": "^17.1.0"
   }
 }
