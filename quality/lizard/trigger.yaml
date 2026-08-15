@@ -1,12 +1,12 @@
 tool: lizard
 language: javascript
 language_version: "12-20"
-technique: "Complexity Analysis"
+technique: "Structural Analysis"
 classification: "Cyclomatic Complexity"
 target_files: [../../src/calculator.js]
 run:
-  command: "lizard src/"
+  command: "lizard src/calculator.js"
 expects:
-  verified: true
+  complexity_report_generated: true
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "real complexity report generated for calculator.js; no thresholds exceeded"

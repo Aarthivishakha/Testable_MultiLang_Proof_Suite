@@ -1,12 +1,12 @@
 tool: npm-audit
 language: javascript
 language_version: "22-26"
-technique: "Dependency Vulnerability Scanning"
-classification: "Known Vulnerabilities"
-target_files: [../../src/calculator.js]
+technique: "Security White-box Testing"
+classification: "Dependency Risk (SCA)"
+target_files: [../../package.json, ../../package-lock.json]
 run:
-  command: "npm audit"
+  command: "npm audit --json"
 expects:
-  verified: true
+  known_cve_count_gt_0: false
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "npm audit ran against the real devDependency tree (esbuild, eslint, nyc, stryker, mocha, chai) - reported real result from npm's advisory database"

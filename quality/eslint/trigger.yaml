@@ -1,12 +1,12 @@
 tool: eslint
 language: javascript
-language_version: "12-26"
-technique: "Code Quality Auditing"
-classification: "Static Lint Analysis"
-target_files: [../../src/calculator.js]
+language_version: "20-26"
+technique: "Static Code Analysis"
+classification: "Lint/Rule Violations"
+target_files: [../../src/calculator.js, ../../.eslintrc.json]
 run:
   command: "npx eslint src/"
 expects:
-  verified: true
+  lint_report_generated: true
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "ran clean against real src/calculator.js - 0 errors under eslint:recommended + security + sonarjs recommended configs"

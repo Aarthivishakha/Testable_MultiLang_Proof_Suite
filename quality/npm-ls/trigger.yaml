@@ -1,12 +1,12 @@
 tool: npm-ls
 language: javascript
 language_version: "22-26"
-technique: "Dependency Tree Auditing"
-classification: "Dependency Graph Analysis"
-target_files: [../../src/calculator.js]
+technique: "Security White-box Testing"
+classification: "Dependency Risk (SCA)"
+target_files: [../../package.json]
 run:
-  command: "npm ls"
+  command: "npm ls --all --json"
 expects:
-  verified: true
+  dependency_tree_reported: true
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "real dependency tree printed for testable-js-proof, including transitive dependencies of esbuild/eslint/nyc/stryker"

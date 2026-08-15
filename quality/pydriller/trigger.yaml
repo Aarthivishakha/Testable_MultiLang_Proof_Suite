@@ -1,12 +1,15 @@
 tool: pydriller
 language: javascript
 language_version: "12-20"
-technique: "Repository Analytics"
-classification: "Git History Mining"
-target_files: [../../src/calculator.js]
+technique: "Development Process Analysis"
+classification: "Code Churn"
+target_files: []
 run:
-  command: "python -m pydriller src/"
+  command: "python -c \"from pydriller import Repository; [print(c.hash) for c in Repository('.').traverse_commits()]\""
+notes: >
+  Reads this repo's own real git history directly; no fixture file needed.
+  Requires Python + pydriller, invoked against the repo root.
 expects:
-  verified: true
+  churn_report_generated: true
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "mined real commits from this repo's actual git history"

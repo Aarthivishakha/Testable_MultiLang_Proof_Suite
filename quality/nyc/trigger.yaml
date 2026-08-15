@@ -1,12 +1,12 @@
 tool: nyc
 language: javascript
-language_version: "12-26"
-technique: "Statement / Branch Coverage"
-classification: "Code Coverage Analysis"
-target_files: [../../src/calculator.js]
+language_version: "18-26"
+technique: "Control Flow Testing"
+classification: "Statement/Branch Coverage"
+target_files: [../../src/calculator.js, ../../.nycrc]
 run:
-  command: "npx nyc --reporter=text mocha test/**/*.test.js"
+  command: "npx nyc --reporter=cobertura mocha 'test/**/*.test.js'"
 expects:
-  verified: true
+  coverage_report_generated: true
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "real coverage/cobertura-coverage.xml generated against calculator.js via the mocha test suite"

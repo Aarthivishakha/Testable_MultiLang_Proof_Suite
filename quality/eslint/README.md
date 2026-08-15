@@ -1,2 +1,4 @@
-# eslint
-Minimal quality fixture for eslint on JavaScript branch.
+# eslint -- javascript proof branch
+
+Verifies eslint runs correctly against this repo's real minimal fixture.
+See trigger.yaml for the exact command and target files.

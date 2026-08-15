@@ -1,2 +1,4 @@
-# eslint-plugin-sonarjs
-Minimal quality fixture for eslint-plugin-sonarjs on JavaScript branch.
+# eslint-plugin-sonarjs -- javascript proof branch
+
+Verifies eslint-plugin-sonarjs runs correctly against this repo's real minimal fixture.
+See trigger.yaml for the exact command and target files.

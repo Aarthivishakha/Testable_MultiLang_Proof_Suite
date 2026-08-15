@@ -1,2 +1,4 @@
-# stryker-js
-Minimal quality fixture for stryker-js on JavaScript branch.
+# stryker-js -- javascript proof branch
+
+Verifies stryker-js runs correctly against this repo's real minimal fixture.
+See trigger.yaml for the exact command and target files.

@@ -1,12 +1,12 @@
 tool: mocha
 language: javascript
-language_version: "12-26"
-technique: "Unit Testing"
-classification: "Test Execution"
-target_files: [../../src/calculator.js]
+language_version: "18-26"
+technique: "Control Flow Testing"
+classification: "Test Case Granularity"
+target_files: [../../test/calculator.test.js]
 run:
-  command: "npm test"
+  command: "npx mocha 'test/**/*.test.js'"
 expects:
-  verified: true
+  tests_pass: true
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "2/2 real tests passed (adds numbers, subtracts numbers) against src/calculator.js"

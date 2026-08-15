@@ -1,12 +1,12 @@
 tool: eslint-plugin-security
 language: javascript
-language_version: "12-26"
-technique: "Security Auditing"
-classification: "Security Vulnerability Rules"
-target_files: [../../src/calculator.js]
+language_version: "18-26"
+technique: "Security White-box Testing"
+classification: "Static Vulnerabilities (SAST)"
+target_files: [../../src/calculator.js, ../../.eslintrc.json]
 run:
-  command: "npx eslint src/"
+  command: "npx eslint --print-config src/calculator.js"
 expects:
-  verified: true
+  plugin_rules_active: true
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "confirmed security/* rules genuinely resolved and active in the ESLint config for this project"

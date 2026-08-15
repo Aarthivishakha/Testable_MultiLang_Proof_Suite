@@ -1,12 +1,12 @@
 tool: eslint-plugin-sonarjs
 language: javascript
-language_version: "12-26"
-technique: "Code Quality Auditing"
-classification: "Cognitive Complexity & Bug Analysis"
+language_version: "20-24"
+technique: "Readability/Maintainability"
+classification: "Cognitive Complexity"
 target_files: [../../src/calculator.js]
 run:
   command: "npx eslint src/"
 expects:
-  verified: true
+  code_smell_detected: false
 verified_in_session: true
-verified_result: "tool verified passing cleanly against src/calculator.js"
+verified_result: "sonarjs rules evaluated against calculator.js - clean, no code smells on this minimal fixture"
