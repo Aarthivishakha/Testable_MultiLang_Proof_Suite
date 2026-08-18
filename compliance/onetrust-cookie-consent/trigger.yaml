@@ -4,10 +4,10 @@ language: javascript
 category: compliance
 technique: "Cookie Consent Verification"
 classification: "GDPR Consent Banner Compliance"
-target_files: [../../compliance/playwright/consent.spec.js]
+target_files: [../../compliance/onetrust-cookie-consent/consent-snapshot.json, ../../compliance/playwright/consent.spec.js]
 run:
   command: "onetrust-scan $CONSENT_TARGET_URL"
 expects:
   consent_scan_completed: true
 verified_in_session: false
-verified_result: "requires OneTrust credentials and CONSENT_TARGET_URL"
+verified_result: "offline consent snapshot and browser flow supplied; live scan requires OneTrust credentials and CONSENT_TARGET_URL"

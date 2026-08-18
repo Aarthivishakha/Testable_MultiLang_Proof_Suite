@@ -1,0 +1,5 @@
+{
+  "request": {"method":"GET","url":"http://127.0.0.1:3000/profile"},
+  "response": {"status":200,"body":"student@example.invalid"},
+  "fixture": true
+}

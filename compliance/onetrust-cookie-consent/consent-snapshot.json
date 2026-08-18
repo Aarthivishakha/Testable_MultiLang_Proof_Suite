@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:3000/consent-fixture",
+  "necessaryCookiesBeforeConsent": 1,
+  "analyticsCookiesBeforeConsent": 0,
+  "analyticsCookiesAfterConsent": 1,
+  "fixture": true
+}

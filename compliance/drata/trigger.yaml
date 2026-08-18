@@ -4,10 +4,10 @@ language: javascript
 category: compliance
 technique: "Compliance Automation"
 classification: "SOC2 / Continuous Compliance Monitoring"
-target_files: [../../compliance/drata/README.md]
+target_files: [../../compliance/drata/compliance-snapshot.json]
 run:
   command: "curl --fail -H 'Authorization: Bearer '$DRATA_API_TOKEN $DRATA_API_URL"
 expects:
   compliance_sync_verified: true
 verified_in_session: false
-verified_result: "requires DRATA_API_TOKEN and DRATA_API_URL"
+verified_result: "offline compliance snapshot supplied; live Drata verification requires DRATA_API_TOKEN and DRATA_API_URL"

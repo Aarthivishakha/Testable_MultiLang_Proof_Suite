@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "TLS/SSL Configuration Scan"
 classification: "Transport Security Compliance"
-target_files: [../../security/fixtures/openapi.yaml]
+target_files: [../../security/fixtures/tls-target.json, ../../scripts/start-test-tls.sh]
 run:
-  command: "testssl.sh --jsonfile testssl.json ${TLS_TARGET:?set TLS_TARGET}"
+  command: "testssl.sh --jsonfile testssl.json ${TLS_TARGET:-127.0.0.1:3443}"
 expects:
   tls_report_generated: true
 verified_in_session: false
-verified_result: "requires reachable TLS_TARGET and testssl.sh"
+verified_result: "local TLS target definition and startup script supplied; requires openssl and testssl.sh"

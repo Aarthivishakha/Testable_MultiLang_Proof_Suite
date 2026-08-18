@@ -1,0 +1,6 @@
+{
+  "framework": "SOC2",
+  "controls": [{"id":"CC6.1","status":"test-fixture-pass"}],
+  "fixture": true,
+  "note": "Synthetic response for offline adapter validation; not a Drata attestation."
+}

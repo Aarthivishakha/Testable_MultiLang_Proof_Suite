@@ -4,10 +4,10 @@ language: javascript
 category: compliance
 technique: "Traffic Interception / PII in Transit"
 classification: "Data-in-Transit PII Exposure"
-target_files: [../../compliance/mitmproxy/pii_check.py, ../../compliance/fixtures/pii-sample.txt, ../../scripts/fixture-server.js]
+target_files: [../../compliance/mitmproxy/pii_check.py, ../../compliance/mitmproxy/traffic-sample.json, ../../compliance/fixtures/pii-sample.txt, ../../scripts/fixture-server.js]
 run:
   command: "mitmdump -s compliance/mitmproxy/pii_check.py"
 expects:
   traffic_report_generated: true
 verified_in_session: false
-verified_result: "addon and synthetic PII fixture supplied; traffic generation remains external"
+verified_result: "addon, synthetic PII, and recorded request/response data supplied; live proxy execution requires mitmproxy"
