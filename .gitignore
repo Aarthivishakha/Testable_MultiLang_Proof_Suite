@@ -4,7 +4,3 @@ node_modules/
 dist/
 coverage/
 obj/
-
-# Exclude JavaScript sources from repository-wide Lizard scans.
-# These files are already tracked, so this does not remove them from Git.
-*.js
