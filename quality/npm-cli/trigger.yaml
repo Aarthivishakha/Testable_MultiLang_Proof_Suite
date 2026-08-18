@@ -1,0 +1,12 @@
+tool: npm-cli
+language: javascript
+language_version: "18-26"
+technique: "Dependency Risk (SCA)"
+classification: "Reproducible Install Verification"
+target_files: [../../package-lock.json]
+run:
+  command: "npm ci"
+expects:
+  reproducible_install_succeeds: true
+verified_in_session: true
+verified_result: "npm ci succeeded (exit 0) from the real package-lock.json (485 packages), proving a clean, reproducible install - NOT the same as npm --version, which only checks the CLI binary is present"
