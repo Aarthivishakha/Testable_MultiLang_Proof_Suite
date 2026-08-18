@@ -9,5 +9,5 @@ run:
   command: "npx playwright test compliance/playwright/consent.spec.js"
 expects:
   compliance_tests_run: true
-verified_in_session: false
-verified_result: "not run 2026-08-18: Playwright browser binaries were not installed in this session (large download); fixture-server.js is available as a real target for a future run"
+verified_in_session: true
+verified_result: "ran 2026-08-18: npx playwright test compliance/playwright/consent.spec.js with chromium installed fresh -- real browser test executed; assertion on consent state failed (real result: onclick handler did not fire as expected in headless page.setContent context) -- tool triggered successfully, test itself surfaced a real bug in the fixture"

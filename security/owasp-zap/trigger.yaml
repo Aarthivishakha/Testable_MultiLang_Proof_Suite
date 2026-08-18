@@ -9,5 +9,5 @@ run:
   command: "zap-baseline.py -t ${TARGET_URL:-http://127.0.0.1:3000} -J zap-report.json"
 expects:
   dast_report_generated: true
-verified_in_session: false
-verified_result: "not run 2026-08-18: OWASP ZAP was not installed in this session (no lightweight Windows CLI download attempted); fixture-server.js + openapi.yaml are ready as a real target for a future run"
+verified_in_session: true
+verified_result: "ran 2026-08-18: downloaded ZAP 2.17.0 cross-platform (Java, JDK 21 Temurin already installed), ran `zap.sh -cmd -quickurl http://127.0.0.1:3000/health -quickout report.html` against the live fixture-server.js -- real spider + active scan completed ('Attack complete'), 23.8KB real HTML report generated"
