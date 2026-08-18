@@ -1,0 +1,13 @@
+tool: Trufflehog
+slug: trufflehog
+language: javascript
+category: security
+technique: "Secret Scanning"
+classification: "Hardcoded Secrets / PII"
+target_files: []
+run:
+  command: "trufflehog filesystem ."
+expects:
+  secret_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

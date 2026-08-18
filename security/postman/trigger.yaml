@@ -1,0 +1,13 @@
+tool: Postman
+slug: postman
+language: javascript
+category: security
+technique: "API Testing / Compliance Checks"
+classification: "Functional & Compliance API Validation"
+target_files: []
+run:
+  command: "postman collection run <collection>.json (via Postman app or Newman)"
+expects:
+  collection_run_completed: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

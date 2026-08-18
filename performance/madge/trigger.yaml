@@ -1,0 +1,13 @@
+tool: madge
+slug: madge
+language: javascript
+category: performance
+technique: "Dependency Graph Analysis"
+classification: "Circular Dependency / Module Coupling"
+target_files: []
+run:
+  command: "npx madge --circular src/"
+expects:
+  dependency_graph_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

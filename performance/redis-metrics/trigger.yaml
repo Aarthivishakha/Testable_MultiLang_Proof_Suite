@@ -1,0 +1,13 @@
+tool: Redis Metrics (custom)
+slug: redis-metrics
+language: javascript
+category: performance
+technique: "Cache Performance Monitoring"
+classification: "Cache Hit Rate / Latency"
+target_files: []
+run:
+  command: "redis-cli info stats"
+expects:
+  redis_metrics_collected: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

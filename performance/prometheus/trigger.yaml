@@ -1,0 +1,13 @@
+tool: Prometheus
+slug: prometheus
+language: javascript
+category: performance
+technique: "Metrics Collection"
+classification: "Runtime Performance Metrics"
+target_files: []
+run:
+  command: "promtool query instant http://localhost:9090 '<query>'"
+expects:
+  metrics_query_succeeded: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

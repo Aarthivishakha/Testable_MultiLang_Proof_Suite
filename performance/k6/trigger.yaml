@@ -1,0 +1,13 @@
+tool: K6
+slug: k6
+language: javascript
+category: performance
+technique: "Load / Stress / Soak / Spike Testing"
+classification: "API Throughput & Latency Under Load"
+target_files: []
+run:
+  command: "k6 run load-test.js"
+expects:
+  load_test_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

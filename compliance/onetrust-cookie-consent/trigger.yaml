@@ -1,0 +1,13 @@
+tool: OneTrust Cookie Consent
+slug: onetrust-cookie-consent
+language: javascript
+category: compliance
+technique: "Cookie Consent Verification"
+classification: "GDPR Consent Banner Compliance"
+target_files: []
+run:
+  command: "onetrust-scan <url> (via OneTrust platform)"
+expects:
+  consent_scan_completed: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

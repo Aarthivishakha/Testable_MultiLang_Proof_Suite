@@ -1,0 +1,13 @@
+tool: GitHub Actions / GitLab CI-CD
+slug: ci-pipeline-scan
+language: javascript
+category: performance
+technique: "CI/CD Pipeline Analysis"
+classification: "Build & Pipeline Performance"
+target_files: []
+run:
+  command: "gh workflow view (or gitlab-ci-lint .gitlab-ci.yml)"
+expects:
+  pipeline_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

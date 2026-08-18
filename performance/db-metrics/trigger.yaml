@@ -1,0 +1,13 @@
+tool: DB Metrics (custom)
+slug: db-metrics
+language: javascript
+category: performance
+technique: "Database Performance Monitoring"
+classification: "Query Latency / Connection Pool Health"
+target_files: []
+run:
+  command: "custom collector querying DB driver stats (e.g. pg_stat_statements)"
+expects:
+  db_metrics_collected: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

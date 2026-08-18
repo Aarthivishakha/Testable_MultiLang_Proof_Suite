@@ -1,0 +1,13 @@
+tool: GitHub Branch Protection API
+slug: github-branch-protection
+language: javascript
+category: security
+technique: "Repo Governance"
+classification: "Branch Protection Compliance"
+target_files: []
+run:
+  command: "gh api repos/:owner/:repo/branches/main/protection"
+expects:
+  protection_status_retrieved: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

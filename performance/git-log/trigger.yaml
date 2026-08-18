@@ -1,0 +1,13 @@
+tool: git log (churn analysis)
+slug: git-log
+language: javascript
+category: performance
+technique: "Repository History Analysis"
+classification: "Code Churn / Change Risk"
+target_files: []
+run:
+  command: "git log --numstat --since='3 months ago'"
+expects:
+  churn_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

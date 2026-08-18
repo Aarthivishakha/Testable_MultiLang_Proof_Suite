@@ -1,0 +1,13 @@
+tool: ESLint AST Rules
+slug: eslint-ast-rules
+language: javascript
+category: performance
+technique: "Static AST Analysis"
+classification: "Algorithmic Performance Risk"
+target_files: []
+run:
+  command: "npx eslint --rule custom-perf-ast-rules src/"
+expects:
+  ast_rule_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

@@ -1,0 +1,13 @@
+tool: Drata
+slug: drata
+language: javascript
+category: compliance
+technique: "Compliance Automation"
+classification: "SOC2 / Continuous Compliance Monitoring"
+target_files: []
+run:
+  command: "drata sync-check (via Drata platform integration)"
+expects:
+  compliance_sync_verified: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

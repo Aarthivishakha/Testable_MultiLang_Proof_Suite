@@ -1,0 +1,13 @@
+tool: OWASP ZAP / ZAP Attack Proxy
+slug: owasp-zap
+language: javascript
+category: security
+technique: "DAST"
+classification: "OWASP Top 10 Vulnerability Scan"
+target_files: []
+run:
+  command: "zap-baseline.py -t <target_url>"
+expects:
+  dast_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

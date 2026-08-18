@@ -1,0 +1,13 @@
+tool: Semgrep
+slug: semgrep
+language: javascript
+category: compliance
+technique: "Custom Rule Static Analysis"
+classification: "Compliance/PII Pattern Rules"
+target_files: []
+run:
+  command: "semgrep --config compliance-rules/ ."
+expects:
+  semgrep_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."

@@ -1,0 +1,13 @@
+tool: 42Crunch
+slug: 42crunch
+language: javascript
+category: security
+technique: "API Security Testing"
+classification: "OpenAPI Contract Security"
+target_files: []
+run:
+  command: "42c-ast openapi.yaml"
+expects:
+  api_security_report_generated: true
+verified_in_session: false
+verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
