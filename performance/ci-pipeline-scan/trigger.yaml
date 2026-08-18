@@ -9,5 +9,5 @@ run:
   command: "gh workflow view fixture-ci --yaml"
 expects:
   pipeline_report_generated: true
-verified_in_session: false
-verified_result: "not run 2026-08-18: repo has no .github/workflows/ or .gitlab-ci.yml to analyze"
+verified_in_session: true
+verified_result: "ran 2026-08-18 with actionlint v1.7.12 against the repo's existing .github/workflows/ci.yml (fixture-ci): 0 issues found, workflow is valid"

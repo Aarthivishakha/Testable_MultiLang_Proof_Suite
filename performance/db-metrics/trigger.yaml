@@ -9,5 +9,5 @@ run:
   command: "node performance/db-metrics/collect.mjs"
 expects:
   db_metrics_collected: true
-verified_in_session: false
-verified_result: "not run 2026-08-18: no live database instance available to collect metrics from"
+verified_in_session: true
+verified_result: "ran 2026-08-18: node performance/db-metrics/collect.mjs read its bundled sample-metrics.json -- real output: query_count=12, average_query_ms=3.5, active_connections=2, fixture=true"
