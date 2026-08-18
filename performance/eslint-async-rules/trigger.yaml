@@ -4,10 +4,10 @@ language: javascript
 category: performance
 technique: "Static AST Analysis"
 classification: "Async/Await Performance Anti-patterns"
-target_files: []
+target_files: [../../src/calculator.js, ../../.eslintrc.json]
 run:
-  command: "npx eslint --rule async-perf-rules src/"
+  command: "npx eslint --rule 'no-await-in-loop:warn' src/"
 expects:
   ast_rule_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "uses an ESLint core async-performance rule against the real source"

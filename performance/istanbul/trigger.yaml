@@ -4,10 +4,10 @@ language: javascript
 category: performance
 technique: "Code Coverage Instrumentation"
 classification: "Coverage Instrumentation Engine"
-target_files: []
+target_files: [../../src/calculator.js, ../../test/calculator.test.js, ../../.nycrc]
 run:
-  command: "npx nyc report (Istanbul is the underlying engine already exercised by the existing quality/nyc scaffold)"
+  command: "npx nyc --reporter=json-summary mocha 'test/**/*.test.js'"
 expects:
   coverage_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "real Istanbul/nyc target and tests supplied"

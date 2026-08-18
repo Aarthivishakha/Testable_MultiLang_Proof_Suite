@@ -4,10 +4,10 @@ language: javascript
 category: compliance
 technique: "Traffic Interception / PII in Transit"
 classification: "Data-in-Transit PII Exposure"
-target_files: []
+target_files: [../../compliance/mitmproxy/pii_check.py, ../../compliance/fixtures/pii-sample.txt, ../../scripts/fixture-server.js]
 run:
-  command: "mitmdump -s pii_check.py"
+  command: "mitmdump -s compliance/mitmproxy/pii_check.py"
 expects:
   traffic_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "addon and synthetic PII fixture supplied; traffic generation remains external"

@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "DAST"
 classification: "OWASP Top 10 Vulnerability Scan"
-target_files: []
+target_files: [../../scripts/fixture-server.js, ../../security/fixtures/openapi.yaml]
 run:
-  command: "zap-baseline.py -t <target_url>"
+  command: "zap-baseline.py -t ${TARGET_URL:-http://127.0.0.1:3000} -J zap-report.json"
 expects:
   dast_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "API fixture supplied; runner must start fixture-server and provide OWASP ZAP"

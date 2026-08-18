@@ -1,0 +1,7 @@
+rules:
+  - id: javascript-sync-loop-review
+    languages: [javascript]
+    message: Review synchronous work inside loops for performance impact.
+    severity: WARNING
+    patterns:
+      - pattern: for (...) { ... }

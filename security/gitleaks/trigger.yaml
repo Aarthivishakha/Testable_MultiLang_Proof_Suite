@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "Secret Scanning"
 classification: "Hardcoded Secrets"
-target_files: []
+target_files: [../../security/fixtures/secret-scan-fixture.txt]
 run:
-  command: "gitleaks detect --source . --report-format json"
+  command: "gitleaks detect --source . --report-format json --report-path gitleaks.json"
 expects:
   secret_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "repository fixture supplied; execution requires gitleaks in the runner"

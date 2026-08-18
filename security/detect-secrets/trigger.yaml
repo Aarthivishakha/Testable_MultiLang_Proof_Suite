@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "Secret Scanning"
 classification: "Hardcoded Secrets"
-target_files: []
+target_files: [../../security/fixtures/secret-scan-fixture.txt]
 run:
-  command: "detect-secrets scan ."
+  command: "detect-secrets scan security/fixtures/secret-scan-fixture.txt"
 expects:
   secret_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "synthetic non-production secret fixture supplied; requires detect-secrets"

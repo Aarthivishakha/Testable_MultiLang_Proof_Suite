@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "IaC Static Analysis"
 classification: "Infra Misconfiguration"
-target_files: []
+target_files: [../../security/fixtures/main.tf]
 run:
-  command: "checkov -d ."
+  command: "checkov -d security/fixtures --output json"
 expects:
   iac_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "valid Terraform fixture supplied; requires checkov"

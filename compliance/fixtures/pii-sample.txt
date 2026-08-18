@@ -1,0 +1,4 @@
+Synthetic PII fixture for detector validation only.
+Name: Example Student
+Email: student@example.invalid
+Phone: +1-202-555-0100

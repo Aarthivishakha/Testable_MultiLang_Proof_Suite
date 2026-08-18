@@ -1,0 +1,4 @@
+# Stats
+keyspace_hits:90
+keyspace_misses:10
+instantaneous_ops_per_sec:4

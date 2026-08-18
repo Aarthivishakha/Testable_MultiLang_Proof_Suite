@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "API Testing (CLI runner for Postman)"
 classification: "Functional & Compliance API Validation"
-target_files: []
+target_files: [../../security/fixtures/postman_collection.json, ../../scripts/fixture-server.js]
 run:
-  command: "newman run <collection>.json"
+  command: "newman run security/fixtures/postman_collection.json --env-var baseUrl=${TARGET_URL:-http://127.0.0.1:3000}"
 expects:
   collection_run_completed: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "collection and API fixture supplied; requires running server"

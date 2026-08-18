@@ -4,10 +4,10 @@ language: javascript
 category: performance
 technique: "Database Performance Monitoring"
 classification: "Query Latency / Connection Pool Health"
-target_files: []
+target_files: [../../performance/db-metrics/collect.mjs, ../../performance/db-metrics/sample-metrics.json]
 run:
-  command: "custom collector querying DB driver stats (e.g. pg_stat_statements)"
+  command: "node performance/db-metrics/collect.mjs"
 expects:
   db_metrics_collected: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "deterministic fixture supplied; DB_METRICS_FILE can select real metrics"

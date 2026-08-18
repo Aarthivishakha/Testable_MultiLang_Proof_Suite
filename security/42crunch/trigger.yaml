@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "API Security Testing"
 classification: "OpenAPI Contract Security"
-target_files: []
+target_files: [../../security/fixtures/openapi.yaml]
 run:
-  command: "42c-ast openapi.yaml"
+  command: "42c-ast security/fixtures/openapi.yaml"
 expects:
   api_security_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "OpenAPI fixture supplied; requires authenticated 42Crunch CLI"

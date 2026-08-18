@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "TLS/SSL Configuration Scan"
 classification: "Transport Security Compliance"
-target_files: []
+target_files: [../../security/fixtures/openapi.yaml]
 run:
-  command: "testssl.sh <host>:<port>"
+  command: "testssl.sh --jsonfile testssl.json ${TLS_TARGET:?set TLS_TARGET}"
 expects:
   tls_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "requires reachable TLS_TARGET and testssl.sh"

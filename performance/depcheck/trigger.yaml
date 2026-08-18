@@ -4,10 +4,10 @@ language: javascript
 category: performance
 technique: "Dependency Analysis"
 classification: "Unused/Bloat Dependency Detection"
-target_files: []
+target_files: [../../package.json, ../../src/calculator.js]
 run:
-  command: "npx depcheck"
+  command: "npx depcheck --json"
 expects:
   depcheck_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "depcheck dependency and concrete targets supplied"

@@ -1,0 +1,7 @@
+rules:
+  - id: javascript-console-pii-review
+    languages: [javascript]
+    message: Review console output for accidental personal data exposure.
+    severity: WARNING
+    patterns:
+      - pattern: console.log(...)

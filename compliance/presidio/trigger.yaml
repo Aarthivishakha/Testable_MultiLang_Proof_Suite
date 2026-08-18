@@ -4,10 +4,10 @@ language: javascript
 category: compliance
 technique: "PII Detection"
 classification: "Student/User PII Exposure"
-target_files: []
+target_files: [../../compliance/fixtures/pii-sample.txt]
 run:
-  command: "presidio-analyzer analyze --text-file <file>"
+  command: "presidio-analyzer analyze --text-file compliance/fixtures/pii-sample.txt"
 expects:
   pii_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "synthetic PII fixture supplied; requires Presidio CLI/service"

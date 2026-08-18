@@ -4,10 +4,10 @@ language: javascript
 category: performance
 technique: "Cache Performance Monitoring"
 classification: "Cache Hit Rate / Latency"
-target_files: []
+target_files: [../../performance/redis-metrics/collect.mjs, ../../performance/redis-metrics/sample-info.txt]
 run:
-  command: "redis-cli info stats"
+  command: "node performance/redis-metrics/collect.mjs"
 expects:
   redis_metrics_collected: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "deterministic fixture supplied; REDIS_INFO_FILE can select real metrics"

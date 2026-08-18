@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Testable JavaScript Fixture API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{ "key": "baseUrl", "value": "http://127.0.0.1:3000" }],
+  "item": [
+    {
+      "name": "Health",
+      "request": { "method": "GET", "url": "{{baseUrl}}/health" },
+      "event": [{ "listen": "test", "script": { "exec": ["pm.test('status is 200', () => pm.response.to.have.status(200));"] } }]
+    },
+    {
+      "name": "Add",
+      "request": { "method": "GET", "url": "{{baseUrl}}/add?a=2&b=3" },
+      "event": [{ "listen": "test", "script": { "exec": ["pm.test('sum is 5', () => pm.expect(pm.response.json().result).to.eql(5));"] } }]
+    }
+  ]
+}

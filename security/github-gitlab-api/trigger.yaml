@@ -4,10 +4,10 @@ language: javascript
 category: security
 technique: "Repo Governance"
 classification: "Access Control Verification"
-target_files: []
+target_files: [../../.github/workflows/ci.yml]
 run:
-  command: "gh api repos/:owner/:repo/collaborators"
+  command: "gh api repos/$GITHUB_REPOSITORY/collaborators"
 expects:
   access_list_retrieved: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "requires authenticated gh CLI with repository administration access"

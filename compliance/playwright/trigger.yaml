@@ -4,10 +4,10 @@ language: javascript
 category: compliance
 technique: "Consent/Age-Gate & Compliance Flows"
 classification: "Runtime Compliance Behaviour"
-target_files: []
+target_files: [../../compliance/playwright/consent.spec.js]
 run:
-  command: "npx playwright test compliance/"
+  command: "npx playwright test compliance/playwright/consent.spec.js"
 expects:
   compliance_tests_run: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "self-contained consent fixture supplied; requires Playwright browser installation"

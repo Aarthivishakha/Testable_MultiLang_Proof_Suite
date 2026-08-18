@@ -4,10 +4,10 @@ language: javascript
 category: performance
 technique: "Static Analysis (Performance Rules)"
 classification: "JS-specific Performance Anti-patterns"
-target_files: []
+target_files: [../../performance/semgrep-js-rules/perf-rules.yml, ../../src/calculator.js]
 run:
-  command: "semgrep --config perf-js-rules/ src/"
+  command: "semgrep --config performance/semgrep-js-rules/perf-rules.yml src/ --json"
 expects:
   semgrep_report_generated: true
 verified_in_session: false
-verified_result: "not yet run -- scaffold only, added 2026-08-18. Fill in real target files/command and execute before relying on this."
+verified_result: "local performance rule and JavaScript target supplied; requires semgrep"

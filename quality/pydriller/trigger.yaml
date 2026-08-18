@@ -3,7 +3,7 @@ language: javascript
 language_version: "12-20"
 technique: "Development Process Analysis"
 classification: "Code Churn"
-target_files: []
+target_files: [../../src/calculator.js]
 run:
   command: "python -c \"from pydriller import Repository; [print(c.hash) for c in Repository('.').traverse_commits()]\""
 notes: >
