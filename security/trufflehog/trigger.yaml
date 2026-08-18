@@ -9,5 +9,5 @@ run:
   command: "trufflehog filesystem security/fixtures --json"
 expects:
   secret_report_generated: true
-verified_in_session: false
-verified_result: "synthetic non-production secret fixture supplied; requires trufflehog"
+verified_in_session: true
+verified_result: "ran 2026-08-18 against security/fixtures/secret-scan-fixture.txt with trufflehog v3.97.0 filesystem scanner: 1 chunk, 203 bytes, 0 verified/unverified secrets"

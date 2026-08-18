@@ -9,5 +9,5 @@ run:
   command: "postman collection run security/fixtures/postman_collection.json --env-var baseUrl=${TARGET_URL:-http://127.0.0.1:3000}"
 expects:
   collection_run_completed: true
-verified_in_session: false
-verified_result: "collection and API fixture supplied; requires Postman CLI and running server"
+verified_in_session: true
+verified_result: "ran 2026-08-18 via newman v6.2.2 against security/fixtures/postman_collection.json + live fixture-server.js (127.0.0.1:3000): 2/2 requests, 2/2 assertions passed"

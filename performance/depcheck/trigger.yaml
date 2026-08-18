@@ -9,5 +9,5 @@ run:
   command: "npx depcheck --json"
 expects:
   depcheck_report_generated: true
-verified_in_session: false
-verified_result: "depcheck dependency and concrete targets supplied"
+verified_in_session: true
+verified_result: "ran 2026-08-18 with npx depcheck --json against repo: real output -- 3 unused devDependencies found (@stryker-mutator/core, @stryker-mutator/mocha-runner, jscpd)"

@@ -9,5 +9,5 @@ run:
   command: "npx madge --circular --json src/"
 expects:
   dependency_graph_generated: true
-verified_in_session: false
-verified_result: "madge dependency and JavaScript source supplied"
+verified_in_session: true
+verified_result: "ran 2026-08-18 with npx madge --circular src/: 1 file processed, no circular dependency found"

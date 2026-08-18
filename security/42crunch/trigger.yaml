@@ -10,4 +10,4 @@ run:
 expects:
   api_security_report_generated: true
 verified_in_session: false
-verified_result: "OpenAPI fixture supplied; requires authenticated 42Crunch CLI"
+verified_result: "blocked 2026-08-18: 42Crunch requires an authenticated SaaS account + API token; cannot be executed standalone against a local fixture"

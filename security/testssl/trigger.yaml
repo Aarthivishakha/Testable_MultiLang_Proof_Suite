@@ -10,4 +10,4 @@ run:
 expects:
   tls_report_generated: true
 verified_in_session: false
-verified_result: "local TLS target definition and startup script supplied; requires openssl and testssl.sh"
+verified_result: "not run 2026-08-18: testssl.sh needs a live HTTPS host; security/fixtures/tls-target.json describes an intended target but no TLS listener was started in this session"

@@ -10,4 +10,4 @@ run:
 expects:
   compliance_tests_run: true
 verified_in_session: false
-verified_result: "self-contained consent fixture supplied; requires Playwright browser installation"
+verified_result: "not run 2026-08-18: Playwright browser binaries were not installed in this session (large download); fixture-server.js is available as a real target for a future run"

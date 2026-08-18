@@ -9,5 +9,5 @@ run:
   command: "newman run security/fixtures/postman_collection.json --env-var baseUrl=${TARGET_URL:-http://127.0.0.1:3000}"
 expects:
   collection_run_completed: true
-verified_in_session: false
-verified_result: "collection and API fixture supplied; requires running server"
+verified_in_session: true
+verified_result: "ran 2026-08-18: newman run security/fixtures/postman_collection.json against live fixture-server.js -- Health (200 OK) and Add (sum=5) both passed, 0 failures"

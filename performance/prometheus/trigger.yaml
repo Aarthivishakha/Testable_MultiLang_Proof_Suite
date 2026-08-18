@@ -10,4 +10,4 @@ run:
 expects:
   metrics_query_succeeded: true
 verified_in_session: false
-verified_result: "uses PROMETHEUS_URL when provided and deterministic fixture otherwise"
+verified_result: "not run 2026-08-18: no running Prometheus server or scrape target exists in this session"

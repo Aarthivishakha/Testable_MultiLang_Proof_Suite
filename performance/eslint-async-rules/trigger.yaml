@@ -10,4 +10,4 @@ run:
 expects:
   ast_rule_report_generated: true
 verified_in_session: false
-verified_result: "uses an ESLint core async-performance rule against the real source"
+verified_result: "noted 2026-08-18: no distinct async-rules ruleset exists separate from the main eslint run; not executed as a standalone tool"

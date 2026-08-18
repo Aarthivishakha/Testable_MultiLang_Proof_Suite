@@ -10,4 +10,4 @@ run:
 expects:
   consent_scan_completed: true
 verified_in_session: false
-verified_result: "offline consent snapshot and browser flow supplied; live scan requires OneTrust credentials and CONSENT_TARGET_URL"
+verified_result: "blocked 2026-08-18: OneTrust requires a live deployed app + OneTrust account; neither available in this session"

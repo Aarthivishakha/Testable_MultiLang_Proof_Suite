@@ -10,4 +10,4 @@ run:
 expects:
   redis_metrics_collected: true
 verified_in_session: false
-verified_result: "deterministic fixture supplied; REDIS_INFO_FILE can select real metrics"
+verified_result: "not run 2026-08-18: no live Redis instance available to collect metrics from"

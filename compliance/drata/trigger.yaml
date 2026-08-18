@@ -10,4 +10,4 @@ run:
 expects:
   compliance_sync_verified: true
 verified_in_session: false
-verified_result: "offline compliance snapshot supplied; live Drata verification requires DRATA_API_TOKEN and DRATA_API_URL"
+verified_result: "blocked 2026-08-18: Drata is a SaaS platform requiring DRATA_API_TOKEN/DRATA_API_URL; no account credentials available in this session"

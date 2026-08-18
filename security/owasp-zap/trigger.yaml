@@ -10,4 +10,4 @@ run:
 expects:
   dast_report_generated: true
 verified_in_session: false
-verified_result: "API fixture supplied; runner must start fixture-server and provide OWASP ZAP"
+verified_result: "not run 2026-08-18: OWASP ZAP was not installed in this session (no lightweight Windows CLI download attempted); fixture-server.js + openapi.yaml are ready as a real target for a future run"

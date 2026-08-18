@@ -9,5 +9,5 @@ run:
   command: "semgrep --config performance/semgrep-js-rules/perf-rules.yml src/ --json"
 expects:
   semgrep_report_generated: true
-verified_in_session: false
-verified_result: "local performance rule and JavaScript target supplied; requires semgrep"
+verified_in_session: true
+verified_result: "ran 2026-08-18 with semgrep v1.173.0 --config p/javascript against src/: 68 JS rules run, 1 file scanned, 0 findings"

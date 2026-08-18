@@ -10,4 +10,4 @@ run:
 expects:
   iac_report_generated: true
 verified_in_session: false
-verified_result: "valid Terraform fixture supplied; requires checkov"
+verified_result: "attempted 2026-08-18 against security/fixtures/main.tf with checkov v3.3.11: process completed exit 0 but produced no printed report via the available invocation path (python -c entrypoint does not route through the CLI's report printer in this environment) -- needs the real `checkov` console-script entrypoint on PATH, not confirmed pass/fail"

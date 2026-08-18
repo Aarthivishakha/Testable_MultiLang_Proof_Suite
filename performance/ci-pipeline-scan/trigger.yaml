@@ -10,4 +10,4 @@ run:
 expects:
   pipeline_report_generated: true
 verified_in_session: false
-verified_result: "workflow supplied; remote query requires authenticated gh CLI"
+verified_result: "not run 2026-08-18: repo has no .github/workflows/ or .gitlab-ci.yml to analyze"

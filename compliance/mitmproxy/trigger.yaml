@@ -10,4 +10,4 @@ run:
 expects:
   traffic_report_generated: true
 verified_in_session: false
-verified_result: "synthetic PII and recorded request/response data supplied; live capture uses built-in mitmproxy options with no Python source file"
+verified_result: "not run 2026-08-18: mitmproxy was not installed in this session; no traffic was routed through it"

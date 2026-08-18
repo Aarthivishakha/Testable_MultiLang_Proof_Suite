@@ -10,4 +10,4 @@ run:
 expects:
   iac_report_generated: true
 verified_in_session: false
-verified_result: "valid Terraform fixture supplied; requires KICS"
+verified_result: "blocked 2026-08-18: KICS ships no native Windows binary; requires Docker, and Docker Desktop's daemon is not running on this machine (client v29.6.2 present, npipe connection failed)"

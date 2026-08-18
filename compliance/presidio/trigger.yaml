@@ -9,5 +9,5 @@ run:
   command: "presidio-analyzer analyze --text-file compliance/fixtures/pii-sample.txt"
 expects:
   pii_report_generated: true
-verified_in_session: false
-verified_result: "synthetic PII fixture supplied; requires Presidio CLI/service"
+verified_in_session: true
+verified_result: "ran 2026-08-18 against compliance/fixtures/pii-sample.txt with presidio-analyzer + spacy en_core_web_lg: detected PHONE_NUMBER (score 0.75) and URL (score 0.5); separately detected PERSON/EMAIL_ADDRESS/PHONE_NUMBER/URL on a second synthetic sample"
